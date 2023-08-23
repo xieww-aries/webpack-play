@@ -1,5 +1,6 @@
 module.exports = function(source, sourceMaps) {
-	console.log(111222, source);
+	// 开始缓存
+    this.cacheable && this.cacheable();
 	this.callback(null, source.replace('webpack', ', I am Xieweiwei'), sourceMaps);
     return;
 }
